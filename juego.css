@@ -1,0 +1,310 @@
+/* =========================
+   🎨 ESTILO GENERAL
+========================= */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #001f3f, #0074D9); /* Azul oscuro a azul brillante */
+  color: #111; /* Negro suave */
+  text-align: center;
+}
+
+/* =========================
+   🔝 HEADER
+========================= */
+.barra-superior {
+  background: #003366; /* Azul marino */
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  color: white;
+}
+
+.barra-superior h1 {
+  margin: 0;
+  font-size: 2.2em;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.barra-superior h1 .INICIO {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.barra-superior h1 .INICIO:hover {
+  color: #00aaff; /* Azul celeste */
+}
+
+.barra-superior p {
+  font-size: 1.1em;
+  margin-top: 8px;
+  color: #ddd;
+}
+
+/* =========================
+   📘 EXPLICACIÓN
+========================= */
+.explicacion {
+  margin: 30px auto;
+  padding: 20px;
+  background: #ffffff;
+  width: 80%;
+  max-width: 900px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.abeja {
+  width: 100px;
+  height: auto;
+  animation: flotar 3s ease-in-out infinite;
+}
+
+@keyframes flotar {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+#explicacion-texto {
+  flex: 1;
+  font-size: 1.2em;
+  text-align: left;
+  color: #222;
+  user-select: none; /* ❌ No se puede copiar */
+}
+
+/* =========================
+   🎮 ZONA DE JUEGO
+========================= */
+.zona-juego {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* Escenario */
+.escenario {
+  flex: 1;
+  min-width: 300px;
+  background: #ffffff;
+  border: 2px solid #003366; /* Azul marino */
+  border-radius: 12px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.escenario div {
+  background: #f8f9fa;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 8px;
+  border-left: 5px solid #0074D9; /* Azul brillante */
+  font-size: 1.1em;
+}
+
+/* Panel de control */
+.panel-control {
+  flex: 1;
+  min-width: 300px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.panel-control label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #003366;
+}
+
+#selector {
+  width: 90%;
+  padding: 10px;
+  border: 2px solid #0074D9;
+  border-radius: 8px;
+  font-size: 1em;
+  margin-bottom: 12px;
+}
+
+.panel-control button {
+  padding: 10px 20px;
+  background: #0074D9; /* Azul brillante */
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.panel-control button:hover {
+  background: #005bb5; /* Azul más oscuro */
+  transform: scale(1.05);
+}
+
+#mensaje {
+  margin-top: 10px;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+/* Vista previa dentro del panel */
+.panel-control iframe {
+  width: 100%;
+  height: 150px;
+  border: 2px solid #003366;
+  border-radius: 10px;
+  margin-top: 15px;
+  background: white;
+}
+
+/* =========================
+   ⏩ CONTROLES
+========================= */
+.controles {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.controles button {
+  padding: 12px 25px;
+  background: #001f3f; /* Azul muy oscuro */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1em;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.controles button:hover {
+  background: #004080;
+  transform: scale(1.05);
+}
+
+/* =========================
+   🏆 FINAL DEL JUEGO
+========================= */
+#fin-juego {
+  background: #fff;
+  border: 2px solid #0074D9;
+  border-radius: 15px;
+  padding: 30px;
+  width: 70%;
+  margin: 40px auto;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+#fin-juego p {
+  font-size: 1.4em;
+  margin-bottom: 15px;
+  color: #003366;
+}
+
+#fin-juego button {
+  background: #0074D9;
+  padding: 12px 25px;
+  border-radius: 10px;
+  font-size: 1.2em;
+  color: white;
+  border: none;
+}
+
+#fin-juego button:hover {
+  background: #005bb5;
+}
+
+/* =========================
+   📝 REGISTRO DE JUGADORES
+========================= */
+.registro {
+  background: #fff;
+  width: 70%;
+  margin: 40px auto 20px auto;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+  border: 2px solid #0074D9;
+}
+
+.registro h2 {
+  color: #003366;
+  margin-bottom: 15px;
+  font-size: 1.8em;
+}
+
+.registro p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.registro input {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+  border: 2px solid #0074D9;
+  width: 250px;
+  font-size: 1em;
+  text-align: center;
+}
+
+.registro button {
+  padding: 10px 20px;
+  background: #0074D9;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.registro button:hover {
+  background: #005bb5;
+  transform: scale(1.05);
+}
+
+.lista-registrados {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.lista-registrados h3 {
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.lista-registrados ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista-registrados li {
+  background: #f8f9fa;
+  margin: 6px auto;
+  padding: 10px;
+  border-radius: 8px;
+  border-left: 5px solid #0074D9;
+  width: 80%;
+  max-width: 400px;
+  font-size: 1em;
+  color: #222;
+}
