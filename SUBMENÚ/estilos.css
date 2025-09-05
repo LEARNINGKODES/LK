@@ -1,0 +1,87 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Chewy&display=swap');
+
+* { box-sizing: border-box; margin:0; padding:0; }
+body {
+  font-family: 'Chewy', cursive;
+  background: linear-gradient(135deg,#0f172a,#1e293b);
+  color:#f8fafc;
+  line-height:1.5;
+}
+
+header {
+  background:#0ea5e9;
+  padding:1rem;
+  position:sticky;
+  top:0;
+  z-index:100;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:space-between;
+  box-shadow:0 4px 10px rgba(0,0,0,0.4);
+}
+
+.logo-area { display:flex; align-items:center; gap:.8rem; }
+.logo-area img.logo { height:50px; }
+
+header h1 { font-family:'Orbitron',sans-serif; font-size:1.6rem; color:#fff; }
+
+nav { display:flex; flex-wrap:wrap; gap:.4rem; }
+nav a {
+  background:#1e293b; color:#f1f5f9; text-decoration:none;
+  padding:.4rem .7rem; border-radius:10px; font-size:.9rem;
+  transition:.2s;
+}
+nav a:hover{ background:#334155; }
+
+a.volver {
+  background:#f43f5e; color:white; text-decoration:none;
+  padding:.5rem 1rem; border-radius:10px;
+  font-size:.9rem; font-weight:bold;
+}
+a.volver:hover{ background:#be123c; }
+
+.buscador{ margin:1rem auto; display:flex; justify-content:center; }
+.buscador input{
+  padding:.7rem 1rem; border-radius:12px; border:none;
+  font-size:1rem; outline:none; min-width:250px;
+}
+
+section { padding:1.5rem 1rem; }
+section h2 {
+  font-family:'Orbitron',sans-serif;
+  color:#38bdf8; margin-bottom:1rem;
+}
+
+.grid{
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(340px,1fr));
+  gap:1rem;
+}
+
+.snippet{
+  background:#1e293b; padding:1rem; border-radius:16px;
+  box-shadow:0 6px 14px rgba(0,0,0,.6);
+  transition:transform .2s;
+}
+.snippet:hover{ transform:translateY(-4px); }
+.snippet h3{ color:#38bdf8; margin-bottom:.4rem; }
+.snippet p.descripcion{ font-size:.95rem; margin-bottom:.6rem; }
+.requisitos{
+  background:#0f172a; padding:.4rem .6rem; border-radius:8px;
+  margin-bottom:.6rem; font-size:.85rem; color:#e0e7ff;
+}
+pre{
+  background:#0b1223; padding:.6rem; border-radius:12px;
+  font-size:.9rem; overflow-x:auto; margin-bottom:.6rem;
+}
+iframe.ejemplo{
+  width:100%; height:100px; border:1px solid #334155;
+  border-radius:12px; margin-bottom:.6rem; background:white;
+}
+.notas{
+  font-size:.85rem; background:#0b1223; padding:.6rem;
+  border-radius:10px; color:#e0e7ff;
+}
+
+.oculto{ display:none; }
